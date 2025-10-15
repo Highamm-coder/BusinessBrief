@@ -14,6 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <link rel="icon" type="image/png" href="/favicon.png" />
         <link rel="stylesheet" href="https://use.typekit.net/dyl6hpw.css" />
         <script src="https://www.google.com/recaptcha/api.js" async defer></script>
       </head>
