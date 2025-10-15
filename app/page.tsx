@@ -319,6 +319,9 @@ export default function Home() {
                   onSubmit={handleSubmit}
                   className="space-y-5 md:space-y-6"
                 >
+                {/* Hidden field for event date */}
+                <input type="hidden" name="event_date" value="Monday, October 21st, 2024 - 12:00 PM – 1:00 PM" />
+
                 <div>
                   <label htmlFor="name" className="block text-[var(--slate)] text-xs sm:text-sm font-bold uppercase tracking-wide mb-2" style={{ fontFamily: 'var(--font-body)' }}>
                     Full Name *
@@ -347,6 +350,8 @@ export default function Home() {
                     required
                     autoComplete="email"
                     inputMode="email"
+                    pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                    title="Please enter a valid email address (e.g., name@example.com)"
                     className="w-full px-4 py-3.5 text-base border-2 border-[var(--slate)]/20 rounded-lg focus:border-[var(--horizon)] focus:outline-none transition-colors text-[var(--slate)]"
                     style={{ fontFamily: 'var(--font-body)' }}
                   />
@@ -377,6 +382,8 @@ export default function Home() {
                     name="phone"
                     autoComplete="tel"
                     inputMode="tel"
+                    pattern="[\(\)\s\-\+\.\d]{10,}"
+                    title="Please enter a valid phone number (e.g., 123-456-7890 or (123) 456-7890)"
                     className="w-full px-4 py-3.5 text-base border-2 border-[var(--slate)]/20 rounded-lg focus:border-[var(--horizon)] focus:outline-none transition-colors text-[var(--slate)]"
                     style={{ fontFamily: 'var(--font-body)' }}
                   />
@@ -429,6 +436,8 @@ export default function Home() {
                       name="guest_email"
                       autoComplete="email"
                       inputMode="email"
+                      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                      title="Please enter a valid email address (e.g., name@example.com)"
                       className="w-full px-4 py-3.5 text-base border-2 border-[var(--slate)]/20 rounded-lg focus:border-[var(--horizon)] focus:outline-none transition-colors text-[var(--slate)]"
                       style={{ fontFamily: 'var(--font-body)' }}
                     />
@@ -525,7 +534,15 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-[var(--slate)] text-white py-8 2xl:py-10 px-6">
         <div className="max-w-6xl 2xl:max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
-          <div className="text-xl sm:text-2xl 2xl:text-3xl font-bold uppercase" style={{ fontFamily: 'var(--font-headline)' }}>DEKSIA</div>
+          <div className="h-8 sm:h-10 2xl:h-12 relative w-32 sm:w-40 2xl:w-48">
+            <Image
+              src="/DeksiaWhiteLogo.svg"
+              alt="Deksia"
+              fill
+              className="object-contain object-left md:object-center"
+              priority
+            />
+          </div>
 
           <div className="flex flex-col sm:flex-row items-center gap-4">
             <span className="text-xs sm:text-sm 2xl:text-base uppercase tracking-wide text-center" style={{ fontFamily: 'var(--font-body)' }}>FOLLOW US FOR UPDATES:</span>
