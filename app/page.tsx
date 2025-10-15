@@ -54,7 +54,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative bg-[var(--slate)] h-[80vh] min-h-[600px] flex items-center overflow-hidden">
         {/* Speech bubble background - centered behind content, reduced size on mobile for better readability */}
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] sm:w-[700px] sm:h-[700px] lg:w-[950px] lg:h-[950px] xl:w-[1100px] xl:h-[1100px] opacity-80 md:opacity-100">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] sm:w-[700px] sm:h-[700px] lg:w-[950px] lg:h-[950px] xl:w-[1100px] xl:h-[1100px] 2xl:w-[1400px] 2xl:h-[1400px] opacity-80 md:opacity-100">
           <Image
             src="/Business Brief/IndigoBubble.png"
             alt=""
@@ -68,7 +68,7 @@ export default function Home() {
 
         {/* Megaphone on right side - aligned to edge with slight overflow - hidden on mobile to reduce visual clutter */}
         <div className="absolute right-0 top-1/2 transform -translate-y-1/2 hidden xl:block opacity-20" style={{ marginTop: '70px', zIndex: 0 }}>
-          <div className="relative w-[500px] h-[650px] xl:w-[600px] xl:h-[750px]" style={{ transform: 'rotate(-15deg) translateX(75px)' }}>
+          <div className="relative w-[500px] h-[650px] xl:w-[600px] xl:h-[750px] 2xl:w-[750px] 2xl:h-[950px]" style={{ transform: 'rotate(-15deg) translateX(75px)' }}>
             <Image
               src="/megaphone.png"
               alt="Megaphone graphic"
@@ -81,45 +81,45 @@ export default function Home() {
         </div>
 
         <div className="relative z-20 w-full">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-8 lg:px-12 xl:px-16">
+          <div className="max-w-[1400px] 2xl:max-w-[1800px] mx-auto px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20">
             {/* Mobile: left-aligned for readability, Desktop: center-aligned for impact */}
             <div className="flex flex-col items-start text-left md:items-center md:text-center">
               {/* Small header text */}
-              <p className="text-[var(--beacon)] text-xs md:text-sm uppercase tracking-[0.2em] md:tracking-[0.25em] mb-6 md:mb-8 leading-tight opacity-90" style={{ fontFamily: 'var(--font-body)', fontWeight: 400 }}>
+              <p className="text-[var(--beacon)] text-xs md:text-sm 2xl:text-base uppercase tracking-[0.2em] md:tracking-[0.25em] mb-6 md:mb-8 2xl:mb-10 leading-tight opacity-90" style={{ fontFamily: 'var(--font-body)', fontWeight: 400 }}>
                 A PANEL DISCUSSION PRESENTED BY DEKSIA
               </p>
 
               {/* Main title - responsive sizing with better mobile readability */}
-              <h1 className="mb-5 md:mb-6 w-full">
-                <span className="block text-white italic text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl mb-1 md:mb-2" style={{ fontFamily: 'var(--font-accent)', fontWeight: 400, lineHeight: '0.95' }}>The</span>
-                <span className="block text-white text-5xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-[10rem] font-bold uppercase leading-[0.8] md:leading-[0.75]" style={{ fontFamily: 'var(--font-headline)', letterSpacing: '-0.03em' }}>BUSINESS BRIEF</span>
+              <h1 className="mb-5 md:mb-6 2xl:mb-8 w-full">
+                <span className="block text-white italic text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl mb-1 md:mb-2 2xl:mb-3" style={{ fontFamily: 'var(--font-accent)', fontWeight: 400, lineHeight: '0.95' }}>The</span>
+                <span className="block text-white text-5xl sm:text-6xl md:text-8xl lg:text-9xl xl:text-[10rem] 2xl:text-[12rem] font-bold uppercase leading-[0.8] md:leading-[0.75]" style={{ fontFamily: 'var(--font-headline)', letterSpacing: '-0.03em' }}>BUSINESS BRIEF</span>
               </h1>
 
               {/* Tagline - mobile left-aligned, desktop centered, removed horizontal padding on mobile */}
-              <div className="text-[var(--beacon)] mb-7 md:mb-8 max-w-2xl md:px-4" style={{ fontFamily: 'var(--font-body)' }}>
-                <p className="text-base md:text-lg lg:text-xl leading-relaxed font-normal">
+              <div className="text-[var(--beacon)] mb-7 md:mb-8 2xl:mb-10 max-w-2xl 2xl:max-w-3xl md:px-4" style={{ fontFamily: 'var(--font-body)' }}>
+                <p className="text-base md:text-lg lg:text-xl 2xl:text-2xl leading-relaxed font-normal">
                   <span className="font-bold">This month</span> discover the three angles you can leverage immediately for smarter more scalable sales growth. Always free, always worth it.
                 </p>
               </div>
 
               {/* CTA Button - mobile: full-width and left-aligned, desktop: inline and centered */}
-              <div className="mb-6 md:mb-7 w-full md:w-auto flex justify-start md:justify-center">
+              <div className="mb-6 md:mb-7 2xl:mb-9 w-full md:w-auto flex justify-start md:justify-center">
                 <a
                   href="#register"
-                  className="block md:inline-block w-full md:w-auto bg-white hover:bg-[var(--beacon)] text-[var(--slate)] font-bold uppercase tracking-wider px-8 sm:px-10 md:px-12 py-5 md:py-6 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 text-center"
+                  className="block md:inline-block w-full md:w-auto bg-white hover:bg-[var(--beacon)] text-[var(--slate)] font-bold uppercase tracking-wider px-8 sm:px-10 md:px-12 2xl:px-14 py-5 md:py-6 2xl:py-7 rounded-full transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 text-center"
                   style={{ fontFamily: 'var(--font-headline)' }}
                 >
-                  <span className="block text-base md:text-lg lg:text-xl">RESERVE YOUR FREE SEAT</span>
-                  <span className="block text-xs md:text-sm mt-1 opacity-75" style={{ fontFamily: 'var(--font-body)', fontWeight: 600 }}>OCTOBER 21ST • 12–1 PM</span>
+                  <span className="block text-base md:text-lg lg:text-xl 2xl:text-2xl">RESERVE YOUR FREE SEAT</span>
+                  <span className="block text-xs md:text-sm 2xl:text-base mt-1 opacity-75" style={{ fontFamily: 'var(--font-body)', fontWeight: 600 }}>OCTOBER 21ST • 12–1 PM</span>
                 </a>
               </div>
 
               {/* Event location - mobile: left-aligned, desktop: centered */}
               <div className="flex items-center justify-start md:justify-center gap-2 text-[var(--beacon)] w-full md:w-auto" style={{ fontFamily: 'var(--font-body)' }}>
-                <svg className="w-4 h-4 md:w-5 md:h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 md:w-5 md:h-5 2xl:w-6 2xl:h-6 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                 </svg>
-                <p className="text-sm md:text-base lg:text-lg font-semibold tracking-wide">120 Stevens St SW, Grand Rapids</p>
+                <p className="text-sm md:text-base lg:text-lg 2xl:text-xl font-semibold tracking-wide">120 Stevens St SW, Grand Rapids</p>
               </div>
             </div>
           </div>
@@ -127,34 +127,34 @@ export default function Home() {
       </section>
 
       {/* Value Points Divider */}
-      <section className="bg-white py-4 md:py-5 px-6 border-y border-[var(--slate)]/10">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex flex-wrap justify-center items-center gap-x-6 md:gap-x-10 gap-y-3 text-[var(--slate)]" style={{ fontFamily: 'var(--font-body)' }}>
+      <section className="bg-white py-4 md:py-5 2xl:py-6 px-6 border-y border-[var(--slate)]/10">
+        <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+          <div className="flex flex-wrap justify-center items-center gap-x-6 md:gap-x-10 2xl:gap-x-14 gap-y-3 text-[var(--slate)]" style={{ fontFamily: 'var(--font-body)' }}>
             <div className="flex items-center gap-2">
-              <span className="text-[var(--horizon)] font-bold">•</span>
-              <span className="text-xs md:text-sm font-bold uppercase tracking-wide">Lunch included</span>
+              <span className="text-[var(--horizon)] font-bold text-lg 2xl:text-xl">•</span>
+              <span className="text-xs md:text-sm 2xl:text-base font-bold uppercase tracking-wide">Lunch included</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-[var(--horizon)] font-bold">•</span>
-              <span className="text-xs md:text-sm font-bold uppercase tracking-wide">Focused topics</span>
+              <span className="text-[var(--horizon)] font-bold text-lg 2xl:text-xl">•</span>
+              <span className="text-xs md:text-sm 2xl:text-base font-bold uppercase tracking-wide">Focused topics</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-[var(--horizon)] font-bold">•</span>
-              <span className="text-xs md:text-sm font-bold uppercase tracking-wide">Tangible takeaways</span>
+              <span className="text-[var(--horizon)] font-bold text-lg 2xl:text-xl">•</span>
+              <span className="text-xs md:text-sm 2xl:text-base font-bold uppercase tracking-wide">Tangible takeaways</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-[var(--horizon)] font-bold">•</span>
-              <span className="text-xs md:text-sm font-bold uppercase tracking-wide">Small groups, real conversation</span>
+              <span className="text-[var(--horizon)] font-bold text-lg 2xl:text-xl">•</span>
+              <span className="text-xs md:text-sm 2xl:text-base font-bold uppercase tracking-wide">Small groups, real conversation</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Combined Details & Speakers Section */}
-      <section className="bg-[var(--beacon)] min-h-[80vh] flex items-center py-12 md:py-16 px-6 relative overflow-hidden">
+      <section className="bg-[var(--beacon)] min-h-[80vh] flex items-center py-12 md:py-16 2xl:py-20 px-6 relative overflow-hidden">
         {/* Bullhorn on left side - hidden on mobile to reduce visual clutter */}
         <div className="absolute left-0 top-1/2 transform -translate-y-1/2 hidden xl:block" style={{ zIndex: 0, opacity: 0.09 }}>
-          <div className="relative w-[450px] h-[600px] xl:w-[550px] xl:h-[700px]" style={{ transform: 'rotate(15deg) translateX(-120px)' }}>
+          <div className="relative w-[450px] h-[600px] xl:w-[550px] xl:h-[700px] 2xl:w-[700px] 2xl:h-[900px]" style={{ transform: 'rotate(15deg) translateX(-120px)' }}>
             <Image
               src="/Business Brief/BullhornHand.png"
               alt="Bullhorn graphic"
@@ -165,25 +165,25 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto relative z-20 w-full px-0 md:px-8 lg:px-12">
+        <div className="max-w-7xl 2xl:max-w-[90rem] mx-auto relative z-20 w-full px-0 md:px-8 lg:px-12 2xl:px-16">
           {/* Mobile: stack vertically, Desktop: two columns */}
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 2xl:gap-20 items-start">
             {/* Left column - Details */}
             <div>
-              <h2 className="text-3xl sm:text-4xl md:text-5xl mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl 2xl:text-6xl mb-6 2xl:mb-8">
                 <span className="italic text-[var(--horizon)]" style={{ fontFamily: 'var(--font-accent)', fontWeight: 400 }}>Straight talk</span>
                 <span className="text-[var(--slate)]" style={{ fontFamily: 'var(--font-accent)', fontWeight: 400 }}> from people who've been there.</span>
               </h2>
 
-              <p className="text-[var(--slate)] text-base md:text-lg mb-4 leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
+              <p className="text-[var(--slate)] text-base md:text-lg 2xl:text-xl mb-4 2xl:mb-5 leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
                 This month, discover how to build sales strategies that actually scale.
               </p>
 
-              <p className="text-[var(--slate)] text-base md:text-lg mb-4 leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
+              <p className="text-[var(--slate)] text-base md:text-lg 2xl:text-xl mb-4 2xl:mb-5 leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
                 We're breaking it down three ways: coaching that elevates your team, software solutions that eliminate friction, and HubSpot strategies that unlock hidden potential in tools you already own.
               </p>
 
-              <p className="text-[var(--slate)] text-base md:text-lg font-bold mb-6" style={{ fontFamily: 'var(--font-body)' }}>
+              <p className="text-[var(--slate)] text-base md:text-lg 2xl:text-xl font-bold mb-6 2xl:mb-8" style={{ fontFamily: 'var(--font-body)' }}>
                 Together, they create a system for smarter, more sustainable growth.
               </p>
 
@@ -191,81 +191,81 @@ export default function Home() {
               <div className="pt-2 flex justify-start w-full lg:w-auto">
                 <a
                   href="#register"
-                  className="block lg:inline-block w-full lg:w-auto bg-[var(--slate)] hover:bg-[#2a2d2b] text-white font-bold uppercase tracking-wider px-8 md:px-10 py-4 md:py-5 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-center"
+                  className="block lg:inline-block w-full lg:w-auto bg-[var(--slate)] hover:bg-[#2a2d2b] text-white font-bold uppercase tracking-wider px-8 md:px-10 2xl:px-12 py-4 md:py-5 2xl:py-6 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 text-center"
                   style={{ fontFamily: 'var(--font-headline)' }}
                 >
-                  <span className="block text-sm md:text-base lg:text-lg">RESERVE YOUR FREE SEAT</span>
-                  <span className="block text-xs md:text-sm mt-1 opacity-75" style={{ fontFamily: 'var(--font-body)', fontWeight: 600 }}>OCTOBER 21ST • 12–1 PM</span>
+                  <span className="block text-sm md:text-base lg:text-lg 2xl:text-xl">RESERVE YOUR FREE SEAT</span>
+                  <span className="block text-xs md:text-sm 2xl:text-base mt-1 opacity-75" style={{ fontFamily: 'var(--font-body)', fontWeight: 600 }}>OCTOBER 21ST • 12–1 PM</span>
                 </a>
               </div>
             </div>
 
             {/* Right column - Speakers */}
             <div>
-              <h2 className="text-[var(--slate)] text-xl sm:text-2xl md:text-3xl font-bold uppercase mb-6 md:mb-8 tracking-wider" style={{ fontFamily: 'var(--font-headline)' }}>
+              <h2 className="text-[var(--slate)] text-xl sm:text-2xl md:text-3xl 2xl:text-4xl font-bold uppercase mb-6 md:mb-8 2xl:mb-10 tracking-wider" style={{ fontFamily: 'var(--font-headline)' }}>
                 THIS MONTH'S SPEAKERS
               </h2>
 
-              <div className="grid grid-cols-1 gap-6 md:gap-8">
+              <div className="grid grid-cols-1 gap-6 md:gap-8 2xl:gap-10">
                 {/* Speaker 1 - Walter Crosby */}
-                <div className="flex items-center gap-4">
+                <div className="flex items-center gap-4 2xl:gap-6">
                   {/* Mobile-optimized image size (72px = 18rem), Desktop: 96px (24rem) */}
-                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 2xl:w-32 2xl:h-32">
                     <Image
                       src="/Business Brief/_Headshots/Walter-Bubble.png"
                       alt="Walter Crosby"
-                      width={96}
-                      height={96}
+                      width={128}
+                      height={128}
                       className="w-full h-auto"
                     />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-[var(--slate)] text-base sm:text-lg md:text-xl font-bold uppercase mb-1 leading-tight" style={{ fontFamily: 'var(--font-headline)', letterSpacing: '0.05em' }}>
+                    <h3 className="text-[var(--slate)] text-base sm:text-lg md:text-xl 2xl:text-2xl font-bold uppercase mb-1 leading-tight" style={{ fontFamily: 'var(--font-headline)', letterSpacing: '0.05em' }}>
                       WALTER CROSBY
                     </h3>
-                    <p className="text-[var(--slate)] text-xs sm:text-sm leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
+                    <p className="text-[var(--slate)] text-xs sm:text-sm 2xl:text-base leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
                       CEO of Helix Sales Development & Founder of The Sales Integrator
                     </p>
                   </div>
                 </div>
 
                 {/* Speaker 2 - John Heritage */}
-                <div className="flex items-center gap-4">
-                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24">
+                <div className="flex items-center gap-4 2xl:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 2xl:w-32 2xl:h-32">
                     <Image
                       src="/Business Brief/_Headshots/John-Bubble.png"
                       alt="John Heritage"
-                      width={96}
-                      height={96}
+                      width={128}
+                      height={128}
                       className="w-full h-auto"
                     />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-[var(--slate)] text-base sm:text-lg md:text-xl font-bold uppercase mb-1 leading-tight" style={{ fontFamily: 'var(--font-headline)', letterSpacing: '0.05em' }}>
+                    <h3 className="text-[var(--slate)] text-base sm:text-lg md:text-xl 2xl:text-2xl font-bold uppercase mb-1 leading-tight" style={{ fontFamily: 'var(--font-headline)', letterSpacing: '0.05em' }}>
                       JOHN HERITAGE
                     </h3>
-                    <p className="text-[var(--slate)] text-xs sm:text-sm leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
+                    <p className="text-[var(--slate)] text-xs sm:text-sm 2xl:text-base leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
                       Founder & CEO of Evenbound
                     </p>
                   </div>
                 </div>
 
                 {/* Speaker 3 - Sarena Wing */}
-                <div className="flex items-center gap-4">
-                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24">
+                <div className="flex items-center gap-4 2xl:gap-6">
+                  <div className="flex-shrink-0 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 2xl:w-32 2xl:h-32">
                     <Image
                       src="/Business Brief/_Headshots/Sarena-Bubble.png"
                       alt="Sarena Wing"
-                      width={96}
-                      height={96}
+                      width={128}
+                      height={128}
                       className="w-full h-auto"
                     />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <h3 className="text-[var(--slate)] text-base sm:text-lg md:text-xl font-bold uppercase mb-1 leading-tight" style={{ fontFamily: 'var(--font-headline)', letterSpacing: '0.05em' }}>
+                    <h3 className="text-[var(--slate)] text-base sm:text-lg md:text-xl 2xl:text-2xl font-bold uppercase mb-1 leading-tight" style={{ fontFamily: 'var(--font-headline)', letterSpacing: '0.05em' }}>
                       SARENA WING
                     </h3>
-                    <p className="text-[var(--slate)] text-xs sm:text-sm leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
+                    <p className="text-[var(--slate)] text-xs sm:text-sm 2xl:text-base leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
                       Sales Manager at ZoomInfo
                     </p>
                   </div>
@@ -277,37 +277,37 @@ export default function Home() {
       </section>
 
       {/* Registration Form Section */}
-      <section id="register" className="bg-white py-12 md:py-16 lg:py-20 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-[var(--slate)] text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold uppercase mb-8 md:mb-12 tracking-wider" style={{ fontFamily: 'var(--font-headline)' }}>
+      <section id="register" className="bg-white py-12 md:py-16 lg:py-20 2xl:py-24 px-6">
+        <div className="max-w-6xl 2xl:max-w-7xl mx-auto">
+          <h2 className="text-[var(--slate)] text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-bold uppercase mb-8 md:mb-12 2xl:mb-16 tracking-wider" style={{ fontFamily: 'var(--font-headline)' }}>
             RESERVE YOUR SEAT
           </h2>
 
           {/* Mobile: stack vertically, Desktop: two columns */}
-          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 2xl:gap-20">
             {/* Left Column - Event Info Card */}
-            <div className="bg-[var(--horizon)] text-white p-6 sm:p-8 md:p-10 rounded-2xl">
-              <div className="mb-6 md:mb-8 pb-6 border-b-2 border-white/30">
+            <div className="bg-[var(--horizon)] text-white p-6 sm:p-8 md:p-10 2xl:p-12 rounded-2xl">
+              <div className="mb-6 md:mb-8 2xl:mb-10 pb-6 2xl:pb-8 border-b-2 border-white/30">
                 <h3>
-                  <span className="block italic text-xl sm:text-2xl md:text-3xl mb-1" style={{ fontFamily: 'var(--font-accent)', fontWeight: 400, lineHeight: '1' }}>The</span>
-                  <span className="block uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight" style={{ fontFamily: 'var(--font-headline)', letterSpacing: '-0.01em' }}>BUSINESS BRIEF | SALES</span>
+                  <span className="block italic text-xl sm:text-2xl md:text-3xl 2xl:text-4xl mb-1" style={{ fontFamily: 'var(--font-accent)', fontWeight: 400, lineHeight: '1' }}>The</span>
+                  <span className="block uppercase text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-bold leading-tight" style={{ fontFamily: 'var(--font-headline)', letterSpacing: '-0.01em' }}>BUSINESS BRIEF | SALES</span>
                 </h3>
               </div>
 
-              <div className="space-y-5 md:space-y-6" style={{ fontFamily: 'var(--font-body)' }}>
+              <div className="space-y-5 md:space-y-6 2xl:space-y-8" style={{ fontFamily: 'var(--font-body)' }}>
                 <div>
-                  <h4 className="text-xs sm:text-sm uppercase tracking-wider font-bold mb-2 opacity-90">WHEN</h4>
-                  <p className="text-base sm:text-lg">Monday, October 21st<br />12:00 PM – 1:00 PM</p>
+                  <h4 className="text-xs sm:text-sm 2xl:text-base uppercase tracking-wider font-bold mb-2 opacity-90">WHEN</h4>
+                  <p className="text-base sm:text-lg 2xl:text-xl">Monday, October 21st<br />12:00 PM – 1:00 PM</p>
                 </div>
 
                 <div>
-                  <h4 className="text-xs sm:text-sm uppercase tracking-wider font-bold mb-2 opacity-90">WHERE</h4>
-                  <p className="text-base sm:text-lg">120 Stevens Street SW<br />Grand Rapids, MI 49503</p>
+                  <h4 className="text-xs sm:text-sm 2xl:text-base uppercase tracking-wider font-bold mb-2 opacity-90">WHERE</h4>
+                  <p className="text-base sm:text-lg 2xl:text-xl">120 Stevens Street SW<br />Grand Rapids, MI 49503</p>
                 </div>
 
                 <div>
-                  <h4 className="text-xs sm:text-sm uppercase tracking-wider font-bold mb-2 opacity-90">WHAT TO EXPECT</h4>
-                  <ul className="space-y-2 text-sm sm:text-base">
+                  <h4 className="text-xs sm:text-sm 2xl:text-base uppercase tracking-wider font-bold mb-2 opacity-90">WHAT TO EXPECT</h4>
+                  <ul className="space-y-2 text-sm sm:text-base 2xl:text-lg">
                     <li>• Expert insights on sales growth</li>
                     <li>• Actionable strategies you can use immediately</li>
                     <li>• Networking with local business leaders</li>
@@ -315,8 +315,8 @@ export default function Home() {
                   </ul>
                 </div>
 
-                <div className="pt-4 border-t border-white/20">
-                  <p className="text-xs sm:text-sm opacity-90">
+                <div className="pt-4 2xl:pt-6 border-t border-white/20">
+                  <p className="text-xs sm:text-sm 2xl:text-base opacity-90">
                     <span className="font-bold">FREE EVENT</span> – No cost to attend, lunch included
                   </p>
                 </div>
@@ -505,39 +505,39 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-[var(--slate)] py-12 md:py-16 lg:py-20 px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-white text-center text-2xl sm:text-3xl md:text-4xl font-bold uppercase mb-8 md:mb-12 tracking-wider" style={{ fontFamily: 'var(--font-headline)' }}>
+      <section className="bg-[var(--slate)] py-12 md:py-16 lg:py-20 2xl:py-24 px-6">
+        <div className="max-w-4xl 2xl:max-w-6xl mx-auto">
+          <h2 className="text-white text-center text-2xl sm:text-3xl md:text-4xl 2xl:text-5xl font-bold uppercase mb-8 md:mb-12 2xl:mb-16 tracking-wider" style={{ fontFamily: 'var(--font-headline)' }}>
             FREQUENTLY ASKED QUESTIONS
           </h2>
 
-          <div className="space-y-6 md:space-y-8">
+          <div className="space-y-6 md:space-y-8 2xl:space-y-10">
             {/* FAQ 1 */}
-            <div className="border-b border-white/20 pb-6 md:pb-8">
-              <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-3 md:mb-4 uppercase" style={{ fontFamily: 'var(--font-headline)' }}>
+            <div className="border-b border-white/20 pb-6 md:pb-8 2xl:pb-10">
+              <h3 className="text-white text-lg sm:text-xl md:text-2xl 2xl:text-3xl font-bold mb-3 md:mb-4 2xl:mb-5 uppercase" style={{ fontFamily: 'var(--font-headline)' }}>
                 What industries is this right for?
               </h3>
-              <p className="text-[var(--beacon)] text-base md:text-lg leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
+              <p className="text-[var(--beacon)] text-base md:text-lg 2xl:text-xl leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
                 The Business Brief is designed for leaders across all industries—whether you're in manufacturing, tech, healthcare, professional services, or retail. If you're growing a business and facing real challenges, you'll find actionable insights here.
               </p>
             </div>
 
             {/* FAQ 2 */}
-            <div className="border-b border-white/20 pb-6 md:pb-8">
-              <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-3 md:mb-4 uppercase" style={{ fontFamily: 'var(--font-headline)' }}>
+            <div className="border-b border-white/20 pb-6 md:pb-8 2xl:pb-10">
+              <h3 className="text-white text-lg sm:text-xl md:text-2xl 2xl:text-3xl font-bold mb-3 md:mb-4 2xl:mb-5 uppercase" style={{ fontFamily: 'var(--font-headline)' }}>
                 Can I bring a friend?
               </h3>
-              <p className="text-[var(--beacon)] text-base md:text-lg leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
+              <p className="text-[var(--beacon)] text-base md:text-lg 2xl:text-xl leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
                 Absolutely! We encourage you to bring colleagues or business friends who would benefit from the discussion. Just make sure everyone registers so we have accurate headcount for lunch.
               </p>
             </div>
 
             {/* FAQ 3 */}
             <div>
-              <h3 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-3 md:mb-4 uppercase" style={{ fontFamily: 'var(--font-headline)' }}>
+              <h3 className="text-white text-lg sm:text-xl md:text-2xl 2xl:text-3xl font-bold mb-3 md:mb-4 2xl:mb-5 uppercase" style={{ fontFamily: 'var(--font-headline)' }}>
                 Is lunch really free?
               </h3>
-              <p className="text-[var(--beacon)] text-base md:text-lg leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
+              <p className="text-[var(--beacon)] text-base md:text-lg 2xl:text-xl leading-relaxed" style={{ fontFamily: 'var(--font-body)' }}>
                 Yes! Lunch is completely free, and so is the entire event. This is our way of investing in the local business community. Show up, learn, connect, and enjoy a great meal on us.
               </p>
             </div>
@@ -546,12 +546,12 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[var(--slate)] text-white py-8 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
-          <div className="text-xl sm:text-2xl font-bold uppercase" style={{ fontFamily: 'var(--font-headline)' }}>DEKSIA</div>
+      <footer className="bg-[var(--slate)] text-white py-8 2xl:py-10 px-6">
+        <div className="max-w-6xl 2xl:max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 md:gap-4">
+          <div className="text-xl sm:text-2xl 2xl:text-3xl font-bold uppercase" style={{ fontFamily: 'var(--font-headline)' }}>DEKSIA</div>
 
           <div className="flex flex-col sm:flex-row items-center gap-4">
-            <span className="text-xs sm:text-sm uppercase tracking-wide text-center" style={{ fontFamily: 'var(--font-body)' }}>FOLLOW US FOR UPDATES:</span>
+            <span className="text-xs sm:text-sm 2xl:text-base uppercase tracking-wide text-center" style={{ fontFamily: 'var(--font-body)' }}>FOLLOW US FOR UPDATES:</span>
             <div className="flex gap-4">
               {/* Increased touch target for social icons (min 44px) */}
               <a href="#" className="w-11 h-11 bg-white rounded-full flex items-center justify-center text-[var(--slate)] hover:bg-gray-200 active:bg-gray-300 transition text-xs font-bold" aria-label="Instagram">
