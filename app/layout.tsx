@@ -10,7 +10,8 @@ export const metadata: Metadata = {
   title: "The Business Brief | A Panel Discussion Presented by Deksia",
   description: "Three experts. One topic. Real answers. Monthly panel discussions covering growth, sales, talent, marketing, operations, finance, and tech.",
   icons: {
-    icon: '/favicon.png',
+    icon: '/favicon.ico',
+    apple: '/favicon_io/apple-touch-icon.png',
   },
   openGraph: {
     title: "The Business Brief | A Panel Discussion Presented by Deksia",
