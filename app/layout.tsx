@@ -7,6 +7,18 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.png',
   },
+  openGraph: {
+    title: "The Business Brief | A Panel Discussion Presented by Deksia",
+    description: "Three experts. One topic. Real answers. Monthly panel discussions covering growth, sales, talent, marketing, operations, finance, and tech.",
+    images: ['/FeaturedImage.png'],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "The Business Brief | A Panel Discussion Presented by Deksia",
+    description: "Three experts. One topic. Real answers. Monthly panel discussions covering growth, sales, talent, marketing, operations, finance, and tech.",
+    images: ['/FeaturedImage.png'],
+  },
 };
 
 export default function RootLayout({
