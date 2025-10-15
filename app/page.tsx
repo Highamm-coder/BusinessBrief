@@ -1,29 +1,16 @@
 'use client';
 
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export default function Home() {
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [isClient, setIsClient] = useState(false);
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
 
-    // Check reCAPTCHA
-    const recaptchaResponse = (window as any).grecaptcha?.getResponse();
-    if (!recaptchaResponse) {
-      alert('Please complete the reCAPTCHA verification.');
-      return;
-    }
-
     const formData = new FormData(form);
-    formData.append('g-recaptcha-response', recaptchaResponse);
 
     try {
       // Submit to Zapier webhook
@@ -447,16 +434,6 @@ export default function Home() {
                     />
                   </div>
                 </div>
-
-                {/* reCAPTCHA - only render on client to avoid hydration mismatch */}
-                {isClient && (
-                  <div className="flex justify-center">
-                    <div
-                      className="g-recaptcha"
-                      data-sitekey="6LfUJusrAAAAAMmB_suC0y8QLqFWPlG92zfCwYM1"
-                    ></div>
-                  </div>
-                )}
 
                 {/* Submit button - full width with proper touch target (min 44px) */}
                 <button
