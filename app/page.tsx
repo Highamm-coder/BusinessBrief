@@ -284,7 +284,7 @@ export default function Home() {
               <div className="space-y-5 md:space-y-6 2xl:space-y-8" style={{ fontFamily: 'var(--font-body)' }}>
                 <div>
                   <h4 className="text-xs sm:text-sm 2xl:text-base uppercase tracking-wider font-bold mb-2 opacity-90">WHEN</h4>
-                  <p className="text-base sm:text-lg 2xl:text-xl">Monday, October 21st<br />12:00 PM – 1:00 PM</p>
+                  <p className="text-base sm:text-lg 2xl:text-xl">Tuesday, October 21st<br />12:00 PM – 1:00 PM</p>
                 </div>
 
                 <div>
@@ -320,7 +320,7 @@ export default function Home() {
                   className="space-y-5 md:space-y-6"
                 >
                 {/* Hidden field for event date */}
-                <input type="hidden" name="event_date" value="Monday, October 21st, 2024 - 12:00 PM – 1:00 PM" />
+                <input type="hidden" name="event_date" value="Tuesday, October 21st, 2024 - 12:00 PM – 1:00 PM" />
 
                 <div>
                   <label htmlFor="name" className="block text-[var(--slate)] text-xs sm:text-sm font-bold uppercase tracking-wide mb-2" style={{ fontFamily: 'var(--font-body)' }}>
@@ -479,7 +479,7 @@ export default function Home() {
                       SEE YOU SOON!
                     </p>
                     <p className="text-sm opacity-90" style={{ fontFamily: 'var(--font-body)' }}>
-                      Monday, October 21st • 12–1 PM<br />
+                      Tuesday, October 21st • 12–1 PM<br />
                       120 Stevens Street SW, Grand Rapids
                     </p>
                   </div>
